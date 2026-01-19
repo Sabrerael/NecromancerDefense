@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+public class EnemySpawner : MonoBehaviour {
+    [SerializeField] GameObject enemyPrefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SpawnEnemy() {
+        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
     }
 }
