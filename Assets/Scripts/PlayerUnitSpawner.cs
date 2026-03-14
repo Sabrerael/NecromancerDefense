@@ -5,6 +5,7 @@ public class PlayerUnitSpawner : MonoBehaviour {
 
     [SerializeField] GameObject playerUnit;
     [SerializeField] GameObject soulGenerator;
+    [SerializeField] GameObject archer;
 
     private int spawnResource = 500;
 
@@ -48,6 +49,19 @@ public class PlayerUnitSpawner : MonoBehaviour {
             Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(soulGenerator, spawnPoint, Quaternion.identity);
             UpdateSpawnResource(-50);
+        }
+    }
+
+    public void SpawnArcher(Vector3 worldPos) {
+        if (spawnResource < 75) {
+            Debug.Log("Insufficent Resources");
+            return;
+        }
+
+        if (worldPos.x < 0) {
+            Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
+            Instantiate(archer, spawnPoint, Quaternion.identity);
+            UpdateSpawnResource(-75);
         }
     }
 }

@@ -27,8 +27,19 @@ public class PlayerController : MonoBehaviour {
         UIManager.instance.UpdateSelectedSpell(4);
     }
 
+    private void OnFive() {
+        selectedSpell = 5;
+        UIManager.instance.UpdateSelectedSpell(5);
+    }
+
+    private void OnSix() {
+        selectedSpell = 6;
+        UIManager.instance.UpdateSelectedSpell(6);
+    }
+
     private void Update() {
        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) {
+            Debug.Log("Mouse Clicked");
             Vector2 mousePos = Mouse.current.position.ReadValue();
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
 
@@ -40,6 +51,10 @@ public class PlayerController : MonoBehaviour {
                 spawner.SpawnSoulGenerator(worldPos);
             else if (selectedSpell == 4)
                 spellLauncher.LaunchThunderSpell(worldPos);
+            else if (selectedSpell == 5)
+                spawner.SpawnArcher(worldPos);
+            else if (selectedSpell == 6)
+                spellLauncher.LaunchBlizzardSpell(worldPos);
             else 
                 Debug.Log("This shouldn't be possible. What did you do?");
         } 

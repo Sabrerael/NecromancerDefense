@@ -3,6 +3,7 @@ using UnityEngine;
 public class SpellLauncher : MonoBehaviour {
     [SerializeField] GameObject spellPrefab;
     [SerializeField] GameObject thunderPrefab;
+    [SerializeField] GameObject blizzardPrefab;
 
     private int spellResource = 10000;
     private float resourceTime = 5;
@@ -35,7 +36,7 @@ public class SpellLauncher : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 0) {
+        if (worldPos.x < 5) {
             Vector3 spawnPoint = new Vector3(0, Mathf.RoundToInt(worldPos.y));
             Instantiate(spellPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-100);
@@ -48,10 +49,23 @@ public class SpellLauncher : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 0) {
+        if (worldPos.x < 5) {
             Vector3 spawnPoint = new Vector3( Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(thunderPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-50);
+        }
+    }
+
+    public void LaunchBlizzardSpell(Vector3 worldPos) {
+        if (spellResource < 75) {
+            Debug.Log("Insufficent Resources");
+            return;
+        }
+
+        if (worldPos.x < 5) {
+            Vector3 spawnPoint = new Vector3( Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
+            Instantiate(blizzardPrefab, spawnPoint, Quaternion.identity);
+            UpdateSpellResource(-75);
         }
     }
 }

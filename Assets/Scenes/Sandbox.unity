@@ -241,7 +241,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22150103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445420960}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1448,6 +1448,8 @@ MonoBehaviour:
   spellImage: {fileID: 324808002}
   soulGeneratorImage: {fileID: 1189260791}
   thunderSpellImage: {fileID: 239907016}
+  archerImage: {fileID: 0}
+  blizzardImage: {fileID: 0}
 --- !u!114 &530486480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,7 +1579,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607083117}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1590,7 +1592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8309944383884060161, guid: fd00d488763d8e846a07e82e7eda7560, type: 3}
+  m_Sprite: {fileID: -8887993299131670151, guid: fd00d488763d8e846a07e82e7eda7560, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2161,7 +2163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1029521107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2201,7 +2203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50
+  m_text: 75
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -2464,6 +2466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerUnit: {fileID: 456513413732029221, guid: a33f95de8eb8dd642be4ae0a0292a340, type: 3}
   soulGenerator: {fileID: 7917223042708889219, guid: 32229840d27c7ec4f98e2eea84429b75, type: 3}
+  archer: {fileID: 1424037130119009550, guid: 0874e44bc8fb2ea4298a035147c45f6b, type: 3}
 --- !u!114 &1119425214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2997672170925429018, guid: 6010fcaa97addd1469edd5729bce2315, type: 3}
@@ -2826,6 +2829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellPrefab: {fileID: 2311054591596497541, guid: 8c05819da2926864db360b85445b085f, type: 3}
   thunderPrefab: {fileID: 867756789272705669, guid: 1aa87d02b6f701e45a326a2a35439292, type: 3}
+  blizzardPrefab: {fileID: 0}
 --- !u!1 &1285701042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,7 +2984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1324585870
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3020,7 +3024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50
+  m_text: 75
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -3634,7 +3638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795172056}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

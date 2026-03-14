@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Image spellImage;
     [SerializeField] Image soulGeneratorImage;
     [SerializeField] Image thunderSpellImage;
+    [SerializeField] Image archerImage;
+    [SerializeField] Image blizzardImage;
 
     private void Awake() {
         instance = this;
@@ -31,21 +33,43 @@ public class UIManager : MonoBehaviour {
             spellImage.enabled = false;
             soulGeneratorImage.enabled = false;
             thunderSpellImage.enabled = false;
+            archerImage.enabled = false;
+            blizzardImage.enabled = false;
         } else if (index == 2) {
             summonImage.enabled = false;
             spellImage.enabled = true;
             soulGeneratorImage.enabled = false;
             thunderSpellImage.enabled = false;
+            archerImage.enabled = false;
+            blizzardImage.enabled = false;
         } else if (index == 3) {
             summonImage.enabled = false;
             spellImage.enabled = false;
             soulGeneratorImage.enabled = true;
             thunderSpellImage.enabled = false;
+            archerImage.enabled = false;
+            blizzardImage.enabled = false;
         } else if (index == 4) {
             summonImage.enabled = false;
             spellImage.enabled = false;
             soulGeneratorImage.enabled = false;
             thunderSpellImage.enabled = true;
+            archerImage.enabled = false;
+            blizzardImage.enabled = false;
+        } else if (index == 5) {
+            summonImage.enabled = false;
+            spellImage.enabled = false;
+            soulGeneratorImage.enabled = false;
+            thunderSpellImage.enabled = false;
+            archerImage.enabled = true;
+            blizzardImage.enabled = false;
+        } else if (index == 6) {
+            summonImage.enabled = false;
+            spellImage.enabled = false;
+            soulGeneratorImage.enabled = false;
+            thunderSpellImage.enabled = false;
+            archerImage.enabled = false;
+            blizzardImage.enabled = true;
         } else 
             Debug.Log("This shouldn't be possible. What did you do?");
     }

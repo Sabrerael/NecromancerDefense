@@ -104,6 +104,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Five",
+                    "type": "Button",
+                    "id": "d76e8adb-ab4c-4754-88ba-da17f36afbf8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Six",
+                    "type": "Button",
+                    "id": "329f180c-be6d-4725-8c53-c4451e470059",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -511,6 +529,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Four",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc8166ef-7e91-4623-af88-e4964bb51d4c",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Five",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21c6266d-9fd1-4d81-8c61-eb9e8c4e6bbb",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Six",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
