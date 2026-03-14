@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class SpellLauncher : MonoBehaviour {
     [SerializeField] GameObject spellPrefab;
+    [SerializeField] GameObject thunderPrefab;
 
-    private int spellResource = 0;
+    private int spellResource = 10000;
     private float resourceTime = 5;
     private float timer = 0;
 
@@ -29,7 +30,7 @@ public class SpellLauncher : MonoBehaviour {
     }
 
     public void LaunchSpell(Vector3 worldPos) {
-        if (spellResource < 50) {
+        if (spellResource < 100) {
             Debug.Log("Insufficent Resources");
             return;
         }
@@ -37,6 +38,19 @@ public class SpellLauncher : MonoBehaviour {
         if (worldPos.x < 0) {
             Vector3 spawnPoint = new Vector3(0, Mathf.RoundToInt(worldPos.y));
             Instantiate(spellPrefab, spawnPoint, Quaternion.identity);
+            UpdateSpellResource(-100);
+        }
+    }
+
+    public void LaunchThunderSpell(Vector3 worldPos) {
+        if (spellResource < 50) {
+            Debug.Log("Insufficent Resources");
+            return;
+        }
+
+        if (worldPos.x < 0) {
+            Vector3 spawnPoint = new Vector3( Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
+            Instantiate(thunderPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-50);
         }
     }

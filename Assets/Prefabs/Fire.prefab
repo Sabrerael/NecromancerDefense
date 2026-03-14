@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5807507955799921950}
   - component: {fileID: 7713629063847452165}
   - component: {fileID: 4902028123562434656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2160570155206834724}
   - component: {fileID: 742170397781225038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

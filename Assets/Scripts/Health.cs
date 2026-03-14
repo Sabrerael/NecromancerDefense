@@ -17,6 +17,9 @@ public class Health : MonoBehaviour {
     }
 
     private void Die() {
+        if (CompareTag("Enemy")) {
+            PlayerUnitSpawner.instance.UpdateSpawnResource(25);
+        }
         Destroy(gameObject);
     }
 }

@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour {
     [SerializeField] TextMeshProUGUI spellResource;
     [SerializeField] Image summonImage;
     [SerializeField] Image spellImage;
+    [SerializeField] Image soulGeneratorImage;
+    [SerializeField] Image thunderSpellImage;
 
     private void Awake() {
         instance = this;
@@ -25,11 +27,25 @@ public class UIManager : MonoBehaviour {
 
     public void UpdateSelectedSpell(int index) {
         if (index == 1) {
-            summonImage.color = Color.blue;
-            spellImage.color = Color.white;
+            summonImage.enabled = true;
+            spellImage.enabled = false;
+            soulGeneratorImage.enabled = false;
+            thunderSpellImage.enabled = false;
         } else if (index == 2) {
-            summonImage.color = Color.white;
-            spellImage.color = Color.blue;
+            summonImage.enabled = false;
+            spellImage.enabled = true;
+            soulGeneratorImage.enabled = false;
+            thunderSpellImage.enabled = false;
+        } else if (index == 3) {
+            summonImage.enabled = false;
+            spellImage.enabled = false;
+            soulGeneratorImage.enabled = true;
+            thunderSpellImage.enabled = false;
+        } else if (index == 4) {
+            summonImage.enabled = false;
+            spellImage.enabled = false;
+            soulGeneratorImage.enabled = false;
+            thunderSpellImage.enabled = true;
         } else 
             Debug.Log("This shouldn't be possible. What did you do?");
     }
