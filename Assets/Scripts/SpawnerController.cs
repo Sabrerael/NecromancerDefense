@@ -14,8 +14,6 @@ public class SpawnerController : MonoBehaviour {
     }
 
     public void Update() {
-
-    
         if (timer >= spawnTime) {
             spawners[Random.Range(0, spawners.Length)].SpawnEnemy();
             spawnTime = Random.Range(minimumSpawnTime, maximumSpawnTime);
