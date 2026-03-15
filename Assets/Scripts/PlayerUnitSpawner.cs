@@ -32,11 +32,9 @@ public class PlayerUnitSpawner : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 0) {
-            Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
-            Instantiate(playerUnit, spawnPoint, Quaternion.identity);
-            UpdateSpawnResource(-100);
-        }
+        Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
+        Instantiate(playerUnit, spawnPoint, Quaternion.identity);
+        UpdateSpawnResource(-100);
     }
 
     public void SpawnSoulGenerator(Vector3 worldPos) {
@@ -45,11 +43,9 @@ public class PlayerUnitSpawner : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 0) {
             Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(soulGenerator, spawnPoint, Quaternion.identity);
             UpdateSpawnResource(-50);
-        }
     }
 
     public void SpawnArcher(Vector3 worldPos) {
@@ -58,10 +54,8 @@ public class PlayerUnitSpawner : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 0) {
             Vector3 spawnPoint = new Vector3(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(archer, spawnPoint, Quaternion.identity);
             UpdateSpawnResource(-75);
         }
-    }
 }

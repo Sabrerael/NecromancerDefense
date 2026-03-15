@@ -36,11 +36,11 @@ public class SpellLauncher : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 5) {
+
             Vector3 spawnPoint = new Vector3(0, Mathf.RoundToInt(worldPos.y));
             Instantiate(spellPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-100);
-        }
+ 
     }
 
     public void LaunchThunderSpell(Vector3 worldPos) {
@@ -49,11 +49,11 @@ public class SpellLauncher : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 5) {
+
             Vector3 spawnPoint = new Vector3( Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(thunderPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-50);
-        }
+
     }
 
     public void LaunchBlizzardSpell(Vector3 worldPos) {
@@ -62,10 +62,10 @@ public class SpellLauncher : MonoBehaviour {
             return;
         }
 
-        if (worldPos.x < 5) {
+
             Vector3 spawnPoint = new Vector3( Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
             Instantiate(blizzardPrefab, spawnPoint, Quaternion.identity);
             UpdateSpellResource(-75);
-        }
+
     }
 }

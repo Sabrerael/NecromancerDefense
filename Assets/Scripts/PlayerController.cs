@@ -43,6 +43,12 @@ public class PlayerController : MonoBehaviour {
             Vector2 mousePos = Mouse.current.position.ReadValue();
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
 
+            if (worldPos.x < -6 || worldPos.x > 5 || worldPos.y < -3 || worldPos.y > 2)
+            {
+                Debug.Log("Outside of spawn region");
+                return;
+            }
+
             if (selectedSpell == 1)
                 spawner.SpawnUnit(worldPos);
             else if (selectedSpell == 2)
