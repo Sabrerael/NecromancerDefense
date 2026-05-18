@@ -1,8 +1,8 @@
 using UnityEngine;
 
 public class SoulGenerator : MonoBehaviour {
-    private int soulAmount = 10;
-    private float resourceTime = 5;
+    [SerializeField] int soulAmount = 25;
+    [SerializeField] float resourceTime = 5;
     private float timer = 0;
 
     private void Update() {

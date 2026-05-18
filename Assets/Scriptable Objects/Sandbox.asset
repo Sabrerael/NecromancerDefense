@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a135e95077dfd849be810a2d91535a2, type: 3}
+  m_Name: Sandbox
+  m_EditorClassIdentifier: 
+  initialWait: 10
+  enemyPrefabs:
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 6159073358674347550, guid: 5abdd4c8651eef0468211ea83c6473d3, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  - {fileID: 5132555175632723419, guid: 5dee20a7e3ff756408e27da3e3dce28a, type: 3}
+  spawnDelays:
+  - 10
+  - 9
+  - 9
+  - 9
+  - 8.5
+  - 0.5
+  - 8
+  - 9
+  - 10
+  - 7
+  - 7
+  - 0.5
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7

@@ -180,6 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b278680600b2dc444acfdc41fcdd76de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soulAmount: 25
+  resourceTime: 10
 --- !u!114 &3209614213888672224
 MonoBehaviour:
   m_ObjectHideFlags: 0

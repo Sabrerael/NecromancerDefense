@@ -4,7 +4,7 @@ public class Archer : MonoBehaviour {
     [SerializeField] GameObject arrowPrefab;
     [SerializeField] float arrowTime = 2f;
 
-    private float timer = 0;
+    private float timer = 0; // TODO Start timer when Archer detects a enemy
 
     private void Update() {
         if (timer >= arrowTime) {

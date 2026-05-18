@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
 
-    [SerializeField] int healthPoints = 5;
+    [SerializeField] int healthPoints = 1;
 
     private void Awake() {
         instance = this;
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
         healthPoints--;
         if (healthPoints >= 0)
         {
-            Debug.Log("You've lost!");
+            FindFirstObjectByType<LevelLoader>().LoadGameOver();
         }
     }
 }

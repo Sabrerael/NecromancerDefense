@@ -4,9 +4,9 @@ public class SpellLauncher : MonoBehaviour {
     [SerializeField] GameObject spellPrefab;
     [SerializeField] GameObject thunderPrefab;
     [SerializeField] GameObject blizzardPrefab;
-
-    private int spellResource = 10000;
-    private float resourceTime = 5;
+    [SerializeField] int spellResource = 0;
+    [SerializeField] float resourceTime = 5;
+    
     private float timer = 0;
 
     private void Start() {

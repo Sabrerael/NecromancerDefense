@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour {
             Vector2 mousePos = Mouse.current.position.ReadValue();
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            if (worldPos.x < -6 || worldPos.x > 5 || worldPos.y < -3 || worldPos.y > 2)
+            if (worldPos.x < -6.5 || worldPos.x > 5.5 || worldPos.y < -3.5 || worldPos.y > 2.5)
             {
                 Debug.Log("Outside of spawn region");
                 return;

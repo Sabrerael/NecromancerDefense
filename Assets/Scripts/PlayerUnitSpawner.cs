@@ -6,8 +6,7 @@ public class PlayerUnitSpawner : MonoBehaviour {
     [SerializeField] GameObject playerUnit;
     [SerializeField] GameObject soulGenerator;
     [SerializeField] GameObject archer;
-
-    private int spawnResource = 500;
+    [SerializeField] int spawnResource = 200;
 
     private void Awake() {
         instance = this;
